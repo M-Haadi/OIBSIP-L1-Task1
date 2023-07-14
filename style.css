@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header{
+
+    background: linear-gradient(to left,black,rgb(255, 249, 249)), url('./images/hero.jpg') center no-repeat;
+    background-size: cover ;
+    height: 100vh;
+    background-blend-mode: darken;
+
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem;
+    flex-wrap: wrap;
+}
+nav img{
+    width: 50px;
+}
+
+.nav_links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.nav_links li{
+  list-style: none;
+  margin: 0 .5rem;
+  font-size: 1.2rem;
+  padding: .5rem;
+  color: aqua;
+  border-radius: 10px;
+}
+
+.nav_links li:hover{
+   background-color: rgb(188, 251, 251) ;
+   color: black;
+   cursor: pointer;
+  }
+
+  .header_content{
+    padding: 1rem;
+    color: aqua;
+    margin-top: 5rem;
+    width: 40vw;
+    margin-left: 5rem;
+  }
+  .header_content h1 {
+  color: rgb(103, 159, 159);
+  font-size: 2rem;
+  }
+  .header_content p{
+    margin: 1rem 0;
+    font-size: 1rem;
+  }
+  .header_content button{
+    padding: .6rem 2rem;
+    border-radius: 10px;
+    background-color: brown;
+    border: none;
+    color: aqua;
+  }
+  .header_content button:hover{
+    background-color: rgb(205, 58, 58);
+  }
+
+  .services{
+    background-color: rgb(228, 252, 252);
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* height: 80vh; */
+  }
+  .services p{
+    font-size: 2rem;
+    color: rgb(103, 159, 159);
+  }
+  .services_content{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 5rem;
+  }
+
+  .service1,.service2,.service3{
+    padding: 1rem;
+    background-color: rgb(132, 234, 234);
+    border-radius: 30%;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 2px 2px 10px grey;
+    margin: 1rem;
+  }
+  .service1 img,.service2 img,.service3 img{
+    width: 80px;
+  }
+  .employees{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 4rem;
+
+  }
+
+  .employees img{
+    width: 300px;
+  }
+  .employees div{
+    cursor: pointer;
+    margin: 1rem;
+    
+  }
+  .employees div:hover{
+    box-shadow: 2px 2px 10px grey;
+  }
+
+  footer{
+    padding: 1rem ;
+    text-align: center;
+    width: 100%;
+    background-color: rgb(60, 100, 100);
+    color: white;
+    
+  }
+
+  @media (max-width:650px) {
+    .header{
+        height: 100%;
+    }
+    .header_content{
+        text-align: center;
+        margin-top: 1rem;
+        margin-left: 5rem;
+    }
+    .header_content h1{
+        font-size: 1rem;
+        color: white;
+    }
+    .header_content p{
+        font-size: .7rem;
+    }
+    
+  }
